@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')   
+    <div class="hero">
+      <div class="contain hero__contain">
+        <h1 class="hero__h1">
+          Портал оптовой <br />
+          и оптово-розничной торговли
+        </h1>
+        <button class="hero__btn">Выбрать город</button>
+      </div>
+    </div>
+    <div class="main-navigation">
+      <div class="contain">
+        <div class="main-navigation__row">
+          <ul>
+            <li><a href="">Оптовые базы (склады)</a></li>
+            <li><a href="">Торгово-промышленные выставки</a></li>
+            <li><a href="">Оптовые продовольственные рынки</a></li>
+            <li><a href="">Оптовые ярмарки</a></li>
+            <li><a href="">Оптово-розничные рынки</a></li>
+            <li><a href="">Оптовые вещевые рынки</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="emp"></div>
+    <div class="sale-platforms">
+      <div class="contain">
+        <div class="h3__wrap">
+          <div class="h3">Оптовые площадки по регионам</div>
+          <a href="" class="all-link">Все регионы</a>
+        </div>
+        <div class="character__row">
+          <div class="character__col">
+            <div class="character__item">
+              <div class="character">А</div>
+              <ul class="character__list">
+                <li><a href="">Алтайский край</a></li>
+                <li><a href="">Амурская область </a></li>
+                <li><a href="">Архангельская область </a></li>
+                <li><a href="">Астраханская область</a></li>
+              </ul>
+            </div>
+            <div class="character__item">
+              <div class="character">Б</div>
+              <ul class="character__list">
+                <li><a href="">Белгородская область </a></li>
+                <li><a href="">Брянская область</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="character__col">
+            <div class="character__item">
+              <div class="character">М</div>
+              <ul class="character__list">
+                <li><a href="">Алтайский край</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="character__col">
+            <div class="character__item">
+              <div class="character">М</div>
+              <ul class="character__list">
+                <li><a href="">Алтайский край</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="latest-pubs">
+      <div class="contain">
+        <div class="h3__wrap">
+          <div class="h3">Последние публикации</div>
+          <a href="" class="all-link">Все публикации</a>
+        </div>
+        <div class="pubs__row">
+          <div class="pubs__col">
+            @@include('var/_pubs__item.html',{
+              "title":"Где искать поставщиков бизнесу",
+              "cat":"Статьи",
+              "img":"img/pubs-1.jpg"
+            })
+          </div>
+          <div class="pubs__col">
+            @@include('var/_pubs__item.html',{
+              "title":"Открыта регистрация посетителей на MITT 2023",
+              "cat":"Новости рынков",
+              "img":"img/pubs-2.jpg"
+            })
+          </div>
+          <div class="pubs__col">
+            @@include('var/_pubs__item.html',{
+              "title":"Как работать с поставщиками из Китая",
+              "cat":"Новости выставок",
+              "img":"img/pubs-3.jpg"
+            })
+          </div>
+          <div class="pubs__col">
+            @@include('var/_pubs__item.html',{
+              "title":"Исследование: сколько стоит начать свой бизнес в России",
+              "cat":"Статьи",
+              "img":"img/pubs-4.jpg"
+            })
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('var/_footer.html')    
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+</html>
+

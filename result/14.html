@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>14. Все площадки Карта сайта</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+  <div class="contain">
+    <div class="header__row">
+      <div class="header__left">
+        <a href="index.html" class="logo">ОПТОВКА.РФ</a>
+        <span class="header__city">Выбрать город</span>
+      </div>
+      <div class="header__right">
+        <ul class="header-nav">
+          <li><a href="">Оптовые площадки</a></li>
+          <li><a href="">Публикации</a></li>
+        </ul>
+        <a href="" class="header__btn">Добавить площадку</a>
+        <div class="header-fav">
+          <span>10</span>
+          <img src="img/fav.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>   
+    <div class="inner-page">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><span>Все оптовые площадки</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="markets">
+        <div class="contain">
+          <h1>Все оптовые рынки</h1>
+          <div class="market-tabs">
+            <ul>
+              <li><a href="">По регионам</a></li>
+              <li><a href="">По типу продукции</a></li>
+              <li><a href="">По типу площадки</a></li>
+              <li><a href="">По охвату</a></li>
+              <li><a href="" class="active">Все</a></li>
+            </ul>
+          </div>
+
+          <div class="list-letters">
+            <ul class="list-letters__ul">
+              <li><a href="">А</a></li>
+              <li><a href="">Б</a></li>
+              <li><a href="">В</a></li>
+              <li><a href="">Г</a></li>
+              <li><a href="">Д</a></li>
+              <li><a href="">Е</a></li>
+              <li><a href="">Ж</a></li>
+              <li><a href="">З</a></li>
+              <li><a href="">И</a></li>
+              <li><a href="">Й</a></li>
+              <li><a href="">К</a></li>
+              <li><a href="">Л</a></li>
+              <li><a href="">М</a></li>
+              <li><a href="">Н</a></li>
+              <li><a href="">О</a></li>
+              <li><a href="">П</a></li>
+              <li><a href="">Р</a></li>
+              <li><a href="">С</a></li>
+              <li><a href="">Т</a></li>
+              <li><a href="">У</a></li>
+              <li><a href="">Ф</a></li>
+              <li><a href="">Х</a></li>
+              <li><a href="">Ц</a></li>
+              <li><a href="">Ч</a></li>
+              <li><a href="">Ш</a></li>
+              <li><a href="">Щ</a></li>
+              <li><a href="">Э</a></li>
+              <li><a href="">Ю</a></li>
+              <li><a href="">Я</a></li>
+            </ul>          
+            <div class="list-letters__w">
+              <ul class="list-letters__ul">
+                <li><a href="">A</a></li>
+                <li><a href="">B</a></li>
+                <li><a href="">C</a></li>
+                <li><a href="">D</a></li>
+                <li><a href="">E</a></li>
+                <li><a href="">F</a></li>
+                <li><a href="">G</a></li>
+                <li><a href="">H</a></li>
+                <li><a href="">I</a></li>
+                <li><a href="">J</a></li>
+                <li><a href="">K</a></li>
+                <li><a href="">L</a></li>
+                <li><a href="">M</a></li>
+                <li><a href="">N</a></li>
+                <li><a href="">O</a></li>
+                <li><a href="">P</a></li>
+                <li><a href="">Q</a></li>
+                <li><a href="">R</a></li>
+                <li><a href="">S</a></li>
+                <li><a href="">T</a></li>
+                <li><a href="">U</a></li>
+                <li><a href="">V</a></li>
+                <li><a href="">W</a></li>
+                <li><a href="">X</a></li>
+                <li><a href="">Y</a></li>
+                <li><a href="">Z</a></li>
+              </ul>
+              <ul class="list-letters__ul">
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li><a href="">7</a></li>
+                <li><a href="">8</a></li>
+                <li><a href="">9</a></li>
+              </ul>
+            </div>          
+          </div>
+          <div class="sitemap__items">
+            <div class="sitemap__item">
+              <div class="sitemap__letter">A</div>
+              <div class="sitemap__cities">
+                <ul>
+                  <li><a href="">Арсенал <span>(Красногорск)</span></a></li>
+                  <li><a href="">Арсенал <span>(Красногорск)</span></a></li>             
+                  <li><a href="">Арсенал <span>(Красногорск)</span></a></li>             
+                  <li><a href="">Агроснаб <span>(Москва)</span></a></li>             
+                  <li><a href="">Агроснаб <span>(Москва)</span></a></li>             
+                  <li><a href="">Агроснаб <span>(Москва)</span></a></li> 
+
+                  <li><a href="">Агроопт <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Агроопт <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Агроопт <span>(Санкт-Петербург)</span></a></li>
+
+                  <li><a href="">Аграрная база №1 <span>(Нижний Новгород)</span></a></li>
+                  <li><a href="">Аграрная база №1 <span>(Нижний Новгород)</span></a></li>
+                  <li><a href="">Аграрная база №1 <span>(Нижний Новгород)</span></a></li>
+
+                  <li><a href="">Астра <span>(Москва)</span></a></li>
+                  <li><a href="">Астра <span>(Москва)</span></a></li>
+                  <li><a href="">Астра <span>(Москва)</span></a></li>
+
+                  <li><a href="">АБК <span>(Новосибирск)</span></a></li>
+                  <li><a href="">АБК <span>(Новосибирск)</span></a></li>
+                  <li><a href="">АБК <span>(Новосибирск)</span></a></li>
+
+                  <li><a href="">Абсолют <span>(Екатеринбург)</span></a></li>
+                  <li><a href="">Абсолют <span>(Екатеринбург)</span></a></li>
+                  <li><a href="">Абсолют <span>(Екатеринбург)</span></a></li>
+
+                  <li><a href="">Акрил <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Акрил <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Акрил <span>(Санкт-Петербург)</span></a></li>
+
+                </ul>
+                <a href="" class="sitemap__all-a">Все площадки на букву А </a>
+              </div>
+            </div>
+            <div class="sitemap__item">
+              <div class="sitemap__letter">Б</div>
+              <div class="sitemap__cities">
+                <ul>
+                  <li><a href="">Арсенал <span>(Красногорск)</span></a></li>
+                  <li><a href="">Арсенал <span>(Красногорск)</span></a></li>             
+                  <li><a href="">Арсенал <span>(Красногорск)</span></a></li>             
+                  <li><a href="">Агроснаб <span>(Москва)</span></a></li>             
+                  <li><a href="">Агроснаб <span>(Москва)</span></a></li>             
+                  <li><a href="">Агроснаб <span>(Москва)</span></a></li> 
+
+                  <li><a href="">Агроопт <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Агроопт <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Агроопт <span>(Санкт-Петербург)</span></a></li>
+
+                  <li><a href="">Аграрная база №1 <span>(Нижний Новгород)</span></a></li>
+                  <li><a href="">Аграрная база №1 <span>(Нижний Новгород)</span></a></li>
+                  <li><a href="">Аграрная база №1 <span>(Нижний Новгород)</span></a></li>
+
+                  <li><a href="">Астра <span>(Москва)</span></a></li>
+                  <li><a href="">Астра <span>(Москва)</span></a></li>
+                  <li><a href="">Астра <span>(Москва)</span></a></li>
+
+                  <li><a href="">АБК <span>(Новосибирск)</span></a></li>
+                  <li><a href="">АБК <span>(Новосибирск)</span></a></li>
+                  <li><a href="">АБК <span>(Новосибирск)</span></a></li>
+
+                  <li><a href="">Абсолют <span>(Екатеринбург)</span></a></li>
+                  <li><a href="">Абсолют <span>(Екатеринбург)</span></a></li>
+                  <li><a href="">Абсолют <span>(Екатеринбург)</span></a></li>
+
+                  <li><a href="">Акрил <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Акрил <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Акрил <span>(Санкт-Петербург)</span></a></li>
+                </ul>
+                <a href="" class="sitemap__all-a">Все площадки на букву Б </a>
+              </div>
+            </div>
+            <div class="sitemap__item">
+              <div class="sitemap__letter">В</div>
+              <div class="sitemap__cities">
+                <ul>
+                  <li><a href="">Арсенал <span>(Красногорск)</span></a></li>
+                  <li><a href="">Арсенал <span>(Красногорск)</span></a></li>             
+                  <li><a href="">Арсенал <span>(Красногорск)</span></a></li>             
+                  <li><a href="">Агроснаб <span>(Москва)</span></a></li>             
+                  <li><a href="">Агроснаб <span>(Москва)</span></a></li>             
+                  <li><a href="">Агроснаб <span>(Москва)</span></a></li> 
+
+                  <li><a href="">Агроопт <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Агроопт <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Агроопт <span>(Санкт-Петербург)</span></a></li>
+
+                  <li><a href="">Аграрная база №1 <span>(Нижний Новгород)</span></a></li>
+                  <li><a href="">Аграрная база №1 <span>(Нижний Новгород)</span></a></li>
+                  <li><a href="">Аграрная база №1 <span>(Нижний Новгород)</span></a></li>
+
+                  <li><a href="">Астра <span>(Москва)</span></a></li>
+                  <li><a href="">Астра <span>(Москва)</span></a></li>
+                  <li><a href="">Астра <span>(Москва)</span></a></li>
+
+                  <li><a href="">АБК <span>(Новосибирск)</span></a></li>
+                  <li><a href="">АБК <span>(Новосибирск)</span></a></li>
+                  <li><a href="">АБК <span>(Новосибирск)</span></a></li>
+
+                  <li><a href="">Абсолют <span>(Екатеринбург)</span></a></li>
+                  <li><a href="">Абсолют <span>(Екатеринбург)</span></a></li>
+                  <li><a href="">Абсолют <span>(Екатеринбург)</span></a></li>
+
+                  <li><a href="">Акрил <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Акрил <span>(Санкт-Петербург)</span></a></li>
+                  <li><a href="">Акрил <span>(Санкт-Петербург)</span></a></li>
+                </ul>
+                <a href="" class="sitemap__all-a">Все площадки на букву В</a>
+              </div>
+            </div>
+          </div>
+          <div class="pagin">
+            <ul>
+              <li><a href="" class="active">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer class="footer">  
+  footer
+</footer>    
+  </div>
+  <!--wrapper-->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>  
+  <script src="js/nouislider.js"></script>
+  <script src="js/wNumb.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

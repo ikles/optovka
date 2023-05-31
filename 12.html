@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12. Тип площадки Карта сайта</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')   
+    <div class="inner-page">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><span>Оптовые площадки по типу площадки</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="markets">
+        <div class="contain">
+          <h1>Оптовые рынки по типу площадки</h1>
+          <div class="market-tabs">
+            <ul>
+              <li><a href="">По регионам</a></li>
+              <li><a href="">По типу продукции</a></li>
+              <li><a href="" class="active">По типу площадки</a></li>
+              <li><a href="">По охвату</a></li>
+              <li><a href="">Все</a></li>
+            </ul>
+          </div>
+          <div class="sitemap__coverage">
+            <ul>
+              <li><a href="">Оптово-розничные рынки <span>121</span></a></li>
+              <li><a href="">Оптовые продовольственные рынки <span>97</span></a></li>
+              <li><a href="">Оптовые вещевые рынки <span>18</span></a></li>
+              <li><a href="">Оптовые базы <span>43</span></a></li>
+              <li><a href="">Торгово-промышленные выставки <span>20</span></a></li>
+              <li><a href="">Оптовые ярмарки <span>8</span></a></li>
+            </ul>                
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('var/_footer.html')    
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+</html>
