@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2. Оптовые площадки раздел</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')   
+    <div class="inner-page">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Оптовые площадки по регионам</a></li>
+            <li><a href="">Все регионы</a></li>
+            <li><span>Россия</span></li>            
+          </ul>
+        </div>
+      </div>
+      <div class="rules pb-0">
+        <div class="contain">
+          <h1>Оптовые рынки России</h1>
+
+          <div class="row">
+            <div class="col-left">
+              <div class="wholesale__nav">
+                <ul>
+                  <li><a href="">Федеральные</a></li>
+                  <li><a href="">Региональные</a></li>
+                  <li><a href="">Местные</a></li>
+                  <li><a href="">Национальные</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="map">
+            <div class="map__label">Оптовые площадки России на карте:</div>
+            <div class="map__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30c961fd048233a1c496cbd1246ffb4ae1f6e58076265424f07043f9a3fad95d&amp;width=100%25&amp;height=310&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+          </div>
+
+          <div class="filter">
+            <form>
+              <select name="regions" id="regions">
+                <option value="Все регионы">Все регионы</option>
+                <option value="Московская область">Московская область</option>
+                <option value="Новосибирск">Новосибирск</option>
+              </select>
+              <select name="cities" id="cities">
+                <option value="Выбрать город">Выбрать город</option>
+                <option value="Москва">Москва</option>
+                <option value="Новосибирск">Новосибирск</option>
+              </select>
+              <select name="types" id="types">
+                <option value="Тип площадки">Тип площадки</option>              
+                <option value="Ярмарка">Ярмарка</option>              
+                <option value="База">База</option>              
+              </select>
+
+              <label class="filter__label">
+                <input type="checkbox" checked>
+                <span></span>
+                <div>Показать мероприятия</div>
+              </label>
+            </form>
+
+          </div>
+
+          <div class="row">
+            <div class="col-left">
+              <div class="wholesale__list">
+                scscf
+              </div>
+              <div class="pagin pagin--wholesale">
+                <ul>
+                  <li><a href="" class="active">1</a></li>
+                  <li><a href="">2</a></li>
+                  <li><a href="">3</a></li>
+                  <li><a href="">4</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-right">
+              2
+            </div>
+          </div>            
+        </div><!--contain-->
+        @@include('var/_regions__links.html')
+      </div>        
+    </div>
+  </div>
+  @@include('var/_footer.html')    
+</div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10. Регионы Карта сайта</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')   
+    <div class="inner-page">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><span>Оптовые рынки по региону</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="markets">
+        <div class="contain">
+          <h1>Оптовые рынки по региону</h1>
+          <div class="market-tabs">
+            <ul>
+              <li><a href="" class="active">По регионам</a></li>
+              <li><a href="">По типу продукции</a></li>
+              <li><a href="">По типу площадки</a></li>
+              <li><a href="">По охвату</a></li>
+              <li><a href="">Все</a></li>
+            </ul>
+          </div>
+
+          <div class="regions">
+            <div class="regions__row">
+              <div class="regions__col">
+                <div class="sitemap__letter">A</div>
+                <ul>        
+                  <li><a href="">Алтайский край <span>7</span></a></li>
+                  <li><a href="">Амурская область <span>14</span></a></li>
+                  <li><a href="">Архангельская область <span>6</span></a></li>
+                  <li><a href="">Астраханская область <span>0</span></a></li>
+                </ul>
+              </div>
+              <div class="regions__col">
+                <div class="sitemap__letter">М</div>
+                <ul>        
+                  <li><a href="">Магаданская область <span>21</span></a></li>
+                  <li><a href="">Москва <span>107</span></a></li>
+                  <li><a href="">Московская область <span>69</span></a></li>
+                  <li><a href="">Мурманская область <span>15</span></a></li>
+                </ul>
+              </div>
+              <div class="regions__col">
+                <div class="sitemap__letter">С</div>
+                <ul>        
+                  <li><a href="">Самарская область <span>7</span></a></li>
+                  <li><a href="">Санкт-Петербург <span>0</span></a></li>
+                  <li><a href="">Саратовская область <span>1</span></a></li>
+                  <li><a href="">Сахалинская область <span>10</span></a></li>
+                  <li><a href="">Свердловская область <span>24</span></a></li>
+                  <li><a href="">Ставропольский край <span>1</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="regions__row">
+              <div class="regions__col">
+                <div class="sitemap__letter">Б</div>
+                <ul>                        
+                  <li><a href="">Белгородская область <span>2</span></a></li>
+                  <li><a href="">Брянская область <span>0</span></a></li>
+                </ul>
+              </div>
+              <div class="regions__col">
+                <div class="sitemap__letter">Н</div>
+                <ul>                          
+                  <li><a href="">Ненецкий автономный округ <span>21</span></a></li>
+                  <li><a href="">Новгородская область <span>69</span></a></li>
+                  <li><a href="">Новосибирская область <span>15</span></a></li>
+                </ul>
+              </div>
+              <div class="regions__col">
+                <div class="sitemap__letter">Т</div>
+                <ul>                                            
+                  <li><a href="">Тамбовская область <span>2</span></a></li>
+                  <li><a href="">Тверская область <span>0</span></a></li>
+                  <li><a href="">Томская область <span>12</span></a></li>
+                  <li><a href="">Тульская область <span>7</span></a></li>
+                  <li><a href="">Тюменская область <span>11</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="regions__row">
+              <div class="regions__col">
+                <div class="sitemap__letter">В</div>
+                <ul>                          
+                  <li><a href="">Белгородская область <span>2</span></a></li>
+                </ul>
+              </div>
+              <div class="regions__col">
+                <div class="sitemap__letter">О</div>
+                <ul>        
+                  <li><a href="">Ненецкий автономный округ <span>21</span></a></li>
+                  <li><a href="">Новгородская область <span>69</span></a></li>
+                  <li><a href="">Новосибирская область <span>15</span></a></li>
+                </ul>
+              </div>
+              <div class="regions__col">
+                <div class="sitemap__letter">У</div>
+                <ul>                          
+                  <li><a href="">Тамбовская область <span>0</span></a></li>
+                  <li><a href="">Тверская область <span>2</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    @@include('var/_footer.html')    
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+</html>

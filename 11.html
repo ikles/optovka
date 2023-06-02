@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>11. Тип продукции Карта сайта</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')   
+    <div class="inner-page">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><span>Оптовые рынки по типу продукции</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="markets">
+        <div class="contain">
+          <h1>Оптовые рынки по типу продукции</h1>
+          <div class="market-tabs">
+            <ul>
+              <li><a href="">По регионам</a></li>
+              <li><a href="" class="active">По типу продукции</a></li>
+              <li><a href="">По типу площадки</a></li>
+              <li><a href="">По охвату</a></li>
+              <li><a href="">Все</a></li>
+            </ul>
+          </div>
+          <div class="sitemap__coverage sitemap__coverage--2">
+            <ul>
+              <li><a href="">Животные и товары для животных <span>121</span></a></li>
+              <li><a href="">Косметика и парфюмерия <span>97</span></a></li>
+              <li><a href="">Мебель и товары для дома <span>18</span></a></li>
+              <li><a href="">Оборудование и техника <span>23</span></a></li>
+              <li><a href="">Одежда и текстиль <span>262</span></a></li>
+              <li><a href="">Полезные ископаемые и сырье <span>1</span></a></li>
+              <li><a href="">Продукты питания <span>163</span></a></li>
+            </ul>                
+            <ul>              
+              <li><a href="">Сельское хозяйство <span>43</span></a></li>
+              <li><a href="">Спорт и отдых <span>20</span></a></li>
+              <li><a href="">Строительство и ремонт <span>108</span></a></li>
+              <li><a href="">Товары для детей <span>213</span></a></li>
+              <li><a href="">Электроника и электротехника <span>29</span></a></li>
+              <li><a href="">Энергетика <span>74</span></a></li>
+              <li><a href="">Прочее <span>169</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    @@include('var/_footer.html')    
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+</html>
