@@ -55,6 +55,21 @@ $('.eye-3').click(function (e) {
 /************************************/
 
 
+  $('.wholesale__gal-item').fancybox({
+    arrows: true,
+    infobar: true,
+    smallBtn: true,
+    toolbar: true,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
+
+
 
   function popup(openLink, windowEl, closeEl) {  
     $(openLink).click(function(e) {

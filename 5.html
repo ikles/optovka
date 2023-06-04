@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Публикации</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')   
+    <div class="inner-page">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Москва</a></li>
+            <li><a href="">Москва</a></li>
+            <li><span>Садовод</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="event">
+        <div class="contain">
+          <div class="events__item">
+            <a class="events__img-w"><img src="img/event-1.png" /></a>
+            <div class="events__content">
+              <div class="events__top">
+                <div class="events__title">Федеральная оптовая ярмарка</div>
+                <div class="events__icons">
+                  <a class="events__icon"><img src="img/icon-cat-1.svg" /></a><a class="events__icon"><img src="img/icon-cat-2.svg" /></a><a class="events__icon"><img src="img/icon-cat-3.svg" /></a>
+                </div>
+              </div>
+              <div class="events__info">
+                <div class="events__name">Федеральная оптовая ярмарка</div>
+                <div class="events__place">Место проведения: ВДНХ</div>
+                <div class="events__geo">Москва, проспект Мира, 119<a class="events__link">на карте</a></div>
+                <a class="events__cat">Оптовые ярмарки</a>
+              </div>
+            </div>
+            <div class="events__info">
+              <div class="events__dates">1 мая – 3 мая 2023</div>
+              <div class="events__status">Мероприятие актуально</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-left">
+
+            </div>
+            <div class="col-right">
+              2
+            </div>
+          </div>
+        </div><!--contain-->
+      </div><!--event-->
+
+
+
+    </div>
+    @@include('var/_footer.html')    
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+</html>
