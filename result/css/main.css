@@ -404,7 +404,8 @@ body {
 p {
   font-size: 16px;
   line-height: 1.5;
-  color: #232323; }
+  color: #232323;
+  margin-bottom: 0; }
   p:not(:last-child) {
     margin-bottom: 10px; }
 
@@ -425,6 +426,20 @@ p {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
+
+.events__photo {
+  height: 180px;
+  overflow: hidden; }
+  .events__photo img {
+    max-height: 180px;
+    max-width: 260px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.events__photos {
+  overflow: hidden;
+  max-height: 180px; }
 
 .lcpadding {
   padding-left: calc((100% - 1180px)/2); }
@@ -852,7 +867,7 @@ p {
 
 .latest-pubs {
   padding-top: 28px;
-  padding-bottom: 85px; }
+  padding-bottom: 100px; }
 
 .pubs__row {
   margin-left: -15px;
@@ -1016,11 +1031,11 @@ p {
   display: flex; }
 
 .col-left {
-  width: calc(100% - 269px);
+  width: calc(100% - 270px);
   padding-right: 30px; }
 
 .col-right {
-  width: 269px;
+  width: 270px;
   -webkit-flex: none;
       -ms-flex: none;
           flex: none; }
@@ -1658,8 +1673,7 @@ input[type="text"] {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 26px;
-  border-bottom: 1px solid #dddddd;
-  margin-bottom: 40px; }
+  border-bottom: 1px solid #dddddd; }
 
 .events__img-w {
   border: 1px solid #eeeeee;
@@ -1685,6 +1699,9 @@ input[type="text"] {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto; }
 
+.events__row {
+  padding-top: 30px; }
+
 .events__top {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1704,7 +1721,10 @@ input[type="text"] {
   margin-left: 10px;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 .events__icon {
   display: -webkit-flex;
@@ -1729,30 +1749,24 @@ input[type="text"] {
 .events__place {
   font-size: 16px;
   line-height: 1.5;
-  color: #232323;
-  margin-bottom: 7px; }
+  color: #232323; }
+
+.events__time {
+  background: url("../img/clock.svg") no-repeat left center;
+  padding-left: 23px; }
 
 .events__geo {
+  margin-top: 7px;
   background-image: url("../img/geo.svg");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left 1px center;
   font-size: 16px;
   line-height: 1.5;
   color: #232323;
-  padding-left: 18px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 12px; }
-
-.events__link {
-  font-size: 16px;
-  color: #2b6cf5;
-  line-height: 1.5;
-  margin-left: 6px; }
+  padding-left: 22px; }
+  .events__geo a {
+    color: #2b6cf5;
+    line-height: 1.5; }
 
 .events__cat {
   background: #f9f9f9;
@@ -1765,7 +1779,12 @@ input[type="text"] {
   display: inline-flex;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  color: #232323;
+  margin-right: 7px;
+  margin-top: 13px; }
+  .events__cat:hover {
+    text-decoration: none; }
 
 .events__dates {
   border: 1px solid #2b6cf5;
@@ -1795,6 +1814,144 @@ input[type="text"] {
 .event {
   margin-top: 10px;
   padding-bottom: 100px; }
+
+.h4 {
+  font-size: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 13px; }
+
+.events__cats-w {
+  margin-top: 25px;
+  margin-bottom: 26px; }
+
+.events__photo {
+  height: 180px;
+  overflow: hidden; }
+  .events__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.events__photos-w {
+  padding-top: 20px;
+  padding-bottom: 34px; }
+
+.events__photos {
+  padding: 0 22.5px; }
+  .events__photos .slick-slide {
+    line-height: 1;
+    font-size: 0;
+    padding: 0 12.5px; }
+  .events__photos .slick-arrow {
+    position: absolute;
+    z-index: 12;
+    width: 17px;
+    height: 28px;
+    border: none;
+    background: none;
+    font-size: 0;
+    background: url("../img/events-photos-arr.svg") no-repeat 0 0;
+    top: calc(50% - 14px); }
+    .events__photos .slick-arrow li button {
+      padding: 0;
+      border: none; }
+  .events__photos .slick-prev {
+    left: 0; }
+  .events__photos .slick-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+table.events__about-table {
+  margin-top: 30px; }
+  table.events__about-table td:nth-child(2) {
+    padding-left: 16px; }
+
+table.content-table a {
+  color: #232323; }
+
+table.content-table td {
+  color: #777;
+  line-height: 1.5;
+  padding-bottom: 13px; }
+  table.content-table td:nth-child(2) {
+    color: #232323;
+    padding-left: 17px; }
+
+.events__works {
+  padding-top: 34px;
+  padding-bottom: 35px; }
+  .events__works table {
+    margin-top: 24px; }
+    .events__works table td:nth-child(2) {
+      padding-bottom: 20px; }
+
+.events__conts table {
+  margin-top: 28px; }
+
+.events__conts {
+  padding-top: 35px;
+  padding-bottom: 35px; }
+  .events__conts .map__map {
+    height: 288px;
+    border-radius: 8px; }
+
+.events__revs {
+  padding-top: 35px;
+  padding-bottom: 35px; }
+
+.soc-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 38px;
+  height: 38px;
+  display: block; }
+  .soc-icon:hover {
+    text-decoration: none; }
+
+.vk {
+  background-image: url("../img/vk.svg"); }
+
+.events__add-rev {
+  padding-top: 24px;
+  padding-bottom: 52px; }
+
+.events__similar {
+  padding-top: 52px; }
+
+.events__similar-list .wholesale__item:nth-child(1) {
+  padding-top: 10px; }
+
+.events__similar-list .wholesale__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0; }
+
+.rek {
+  height: 640px;
+  width: 100%;
+  background: #EAEAEA;
+  margin-top: 13px; }
+
+.publication__info {
+  margin-bottom: 15px; }
+
+h2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  color: #232323;
+  margin-bottom: 20px; }
+
+.publication {
+  padding-bottom: 67px; }
+  .publication > img {
+    border-radius: 8px;
+    max-width: 100%; }
+  .publication p i {
+    color: #777777; }
 
 .completed-slde-dots {
   position: absolute;

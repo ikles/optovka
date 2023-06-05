@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>5. Страница рынка</title>  
+  <title>6. Страница мероприятия</title>  
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -52,7 +52,7 @@
             <li><a href="">Главная</a></li>
             <li><a href="">Москва</a></li>
             <li><a href="">Москва</a></li>
-            <li><span>Садовод</span></li>
+            <li><span>Федеральная оптовая ярмарка</span></li>
           </ul>
         </div>
       </div>
@@ -62,7 +62,7 @@
             <a href="" class="events__img-w"><img src="img/event-1.png" /></a>
             <div class="events__content">
               <div class="events__top">
-                <div class="events__title">ТК Садовод</div>
+                <div class="events__title">Федеральная оптовая ярмарка</div>
                 <div class="events__icons">
                   <a href="" class="events__icon"><img src="img/icon-cat-1.svg" /></a>
                   <a href="" class="events__icon"><img src="img/icon-cat-2.svg" /></a>
@@ -70,20 +70,19 @@
                 </div>
               </div>
               <div class="events__info">
-                <div class="events__name">Оптово-вещевой рынок</div>
-                <div class="events__place"></div>
-                <div class="events__time">Ежедневно с 6:00 до 18:00</div>
-                <div class="events__geo">Москва, 14-ый км МКАД (внутренняя сторона), ул. Верхние поля <a href="">на карте</a></div>
+                <div class="events__name">Федеральная оптовая ярмарка</div>
+                <div class="events__place">Место проведения: ВДНХ</div>
+                <!-- <div class="events__time">Ежедневно с 6:00 до 18:00</div> -->
+                <div class="events__geo">Москва, проспект Мира, 119 <a href="">на карте</a></div>
                 <div class="events__cats">
-                  <a href="" class="events__cat">Оптово-розничные рынки</a>
-                  <a href="" class="events__cat">Оптово-вещевые рынки</a>
+                  <a href="" class="events__cat">Оптовые ярмарки</a>
                 </div>
               </div>
             </div>
-            <!-- <div class="events__info">
+            <div class="events__info">
               <div class="events__dates">1 мая – 3 мая 2023</div>
               <div class="events__status">Мероприятие актуально</div>
-            </div> -->
+            </div>
           </div>
           <div class="events__row row">
             <div class="col-left">
@@ -97,19 +96,32 @@
               </div>
               <div class="events__about" id="about">
                 <div class="h3">О мероприятии</div>
-                <p>Уже 25 лет торговый комплекс «Садовод» является крупнейшим в России центром оптово-розничной торговли. Общая площадь территории торгового комплекса составляет более 40 га.</p>
                 <p>Основные товары, представленные в торговом комплексе: мужская и женская одежда и обувь, пальто и куртки, меха и кожа, свадебные платья, мужские костюмы, украшения и аксессуары, товары для детей, игрушки, ковры и текстиль, ткани и фурнитура, товары для охоты, рыбалки и туризма, домашние животные, а также живые цветы, комнатные растения, семена и саженцы. В ТК «Садовод» всегда широчайший ассортимент, оптимальное соотношение доступных цен и высокого качества, гарантированного производителями.</p>
-                <p>В ТК «Садовод» свою продукцию предлагают непосредственные представители фабрик и производств России, Белоруссии, Турции, Польши, Киргизии, Китая. Здесь работают свыше 9 000 торговых павильонов. Ежедневно ТК «Садовод» посещают более 100 000 покупателей из различных регионов России и других государств.</p>
+
+                <table class="content-table events__about-table">
+                  <tbody>
+                    <tr>
+                      <td>Организатор:</td>
+                      <td>ТЕКСТИЛЬЛЕГПРОМ</td>
+                    </tr>     
+                    <tr>
+                      <td>График работы:</td>
+                      <td>1 марта и 2 марта 2023 г. павильоны будут открыты с 10:00 до 18:00; <br>
+                      3 марта 2023 г. с 10:00 до 14:00;</td>
+                    </tr>   
+                    <tr>
+                      <td>Место проведения:</td>
+                      <td>ВДНХ</td>
+                    </tr>           
+                  </tbody>
+                </table>
+
               </div>
               <div class="events__cats-w">
                 <div class="h4">Категории товаров</div>
                 <div class="events__cats">
                   <a href="" class="events__cat">Одежда и текстиль</a>
-                  <a href="" class="events__cat">Электроника и электротехника</a>
-                  <a href="" class="events__cat">Спорт и отдых</a>
-                  <a href="" class="events__cat">Косметика и парфюмерия</a>
-                  <a href="" class="events__cat">Товары для детей</a>
-                  <a href="" class="events__cat">Сельское хозяйство</a>
+                  <a href="" class="events__cat">Одежда и текстиль</a>
                 </div>
               </div>            
               <div class="events__photos-w" id="photo">
@@ -122,49 +134,15 @@
                   <a class="events__photo" href="img/events-photos-3.jpg"><img src="img/events-photos-3.jpg" alt=""></a>
                 </div>
               </div>
-              <div class="events__works">
-                <div class="h3">График работы</div>
-                <table>
-                  <tr>
-                    <td>Пн:</td>
-                    <td>6:00 – 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Вт:</td>
-                    <td>6:00 – 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Ср:</td>
-                    <td>6:00 – 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>ЧТ:</td>
-                    <td>6:00 – 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Пт:</td>
-                    <td>6:00 – 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Сб:</td>
-                    <td>6:00 – 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Вс:</td>
-                    <td>6:00 – 18:00</td>
-                  </tr>
-                </table>
-              </div>
               <div class="events__conts" id="conts">
                 <div class="h3">Контакты</div>
                 <div class="map__map">
   <script async type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30c961fd048233a1c496cbd1246ffb4ae1f6e58076265424f07043f9a3fad95d&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
 </div>
-                <table>
+                <table class="content-table">
                   <tr>
                     <td>Адрес:</td>
-                    <td>14-ый км МКАД (внутренняя сторона),
-                    ул. Верхние поля</td>
+                    <td>Москва, проспект Мира, 119</td>
                   </tr>
                   <tr>
                     <td>Телефон:</td>
@@ -177,11 +155,7 @@
                   <tr>
                     <td>Сайт:</td>
                     <td><a href="https://sadovodtk.ru/">https://sadovodtk.ru/</a></td>
-                  </tr>
-                  <tr>
-                    <td>Социальные сети:</td>
-                    <td><a href="" class="soc-icon vk"></a></td>
-                  </tr>
+                  </tr>                  
                 </table>
               </div>
               <div class="events__revs" id="reviews">
@@ -191,13 +165,13 @@
                 <div class="h3">Оставить отзыв</div>
               </div>
               <div class="events__similar">
-                <div class="h3">Похожие площадки</div>
+                <div class="h3">Похожие мероприятия</div>
                 <div class="events__similar-list">
                  <div class="wholesale__item">
   <a href="" class="events__img-w"><img src="img/event-1.png" /></a>
   <div class="wholesale__content">
     <div class="wholesale__top">
-      <div class="events__dates"></div>      
+      <div class="events__dates">28 февраля – 15 марта 2023</div>      
       <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
     </div>
     <div class="wholesale__info">
@@ -216,10 +190,10 @@
 </div>
 
                 <div class="wholesale__item">
-  <a href="" class="events__img-w"><img src="img/event-3.jpg" /></a>
+  <a href="" class="events__img-w"><img src="img/noimage.svg" /></a>
   <div class="wholesale__content">
     <div class="wholesale__top">
-      <div class="events__dates"></div>      
+      <div class="events__dates">1 мая –  3 мая 2023</div>      
       <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
     </div>
     <div class="wholesale__info">
@@ -233,28 +207,6 @@
       <a href='img/gal-7.jpg' class='wholesale__gal-item'><img src='img/gal-7.jpg' /></a>      
             
            
-    </div>
-  </div>
-</div>
-
-                <div class="wholesale__item">
-  <a href="" class="events__img-w"><img src="img/noimage.svg" /></a>
-  <div class="wholesale__content">
-    <div class="wholesale__top">
-      <div class="events__dates"></div>      
-      <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
-    </div>
-    <div class="wholesale__info">
-      <a href="" class="wholesale__name">Заволжская база Маяк</a>
-      <div class="wholesale__spec">Продажа продуктов питания оптом и в розницу</div>
-      <div class="wholesale__text">Крупнейший оптово-розничный продовольственный центр Ульяновска. У нас закупают продукты питания рестораны, гостиницы, сетевые и несетевые магазины, региональные оптовые компании и ...</div>
-      <div class="wholesale__adress">Ульяновск, Ульяновская область</div>
-    </div>
-    <div class="wholesale__gal">
-      <a href='img/gal-8.jpg' class='wholesale__gal-item'><img src='img/gal-8.jpg' /></a>      
-      <a href='img/gal-9.jpg' class='wholesale__gal-item'><img src='img/gal-9.jpg' /></a>      
-      <a href='img/gal-10.jpg' class='wholesale__gal-item'><img src='img/gal-10.jpg' /></a>      
-      <a href='img/gal-11.jpg' class='wholesale__gal-item'><img src='img/gal-11.jpg' /></a>     
     </div>
   </div>
 </div>

@@ -21,17 +21,17 @@ jQuery(document).ready(function( $ ) {
 
 
 
-/*$('.top__slider').slick({
+$('.events__photos').slick({
   infinite: true,    
-  speed: 6000,
+  speed: 400,
   slidesToScroll: 1,
   autoplay: false,    
-  slidesToShow: 1,
+  slidesToShow: 3,
   cssEase: 'linear',  
   autoplaySpeed: 0,  
   arrows: true,
   pauseOnHover: true,  
-});*/
+});
 
 
 
@@ -56,6 +56,20 @@ $('.eye-3').click(function (e) {
 
 
   $('.wholesale__gal-item').fancybox({
+    arrows: true,
+    infobar: true,
+    smallBtn: true,
+    toolbar: true,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
+
+  $('.events__photos a').fancybox({
     arrows: true,
     infobar: true,
     smallBtn: true,
@@ -99,7 +113,7 @@ $('.eye-3').click(function (e) {
   $('a[href*=\\#]:not([href=\\#])').click(function () {
     elementClick = $(this).attr("href");
     destination = $(elementClick).offset().top;
-    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 85}, 1100);
+    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 0}, 1100);
     return false;
   });
 
@@ -134,4 +148,4 @@ $('.eye-3').click(function (e) {
 }); //ready
 
 
-const dropzone = new Dropzone("div.my-dropzone", { url: "/file/post" });
+//const dropzone = new Dropzone("div.my-dropzone", { url: "/file/post" });

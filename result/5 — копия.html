@@ -5,8 +5,15 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>5. Страница рынка</title>  
-  @@include('var/_styless.html')
+  <title>Публикации</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -17,7 +24,27 @@
 <body>
 
   <div class="wrapper">
-    @@include('var/_header.html')   
+    <header class="header">
+  <div class="contain">
+    <div class="header__row">
+      <div class="header__left">
+        <a href="index.html" class="logo">ОПТОВКА.РФ</a>
+        <span class="header__city">Выбрать город</span>
+      </div>
+      <div class="header__right">
+        <ul class="header-nav">
+          <li><a href="">Оптовые площадки</a></li>
+          <li><a href="">Публикации</a></li>
+        </ul>
+        <a href="" class="header__btn">Добавить площадку</a>
+        <div class="header-fav">
+          <span>10</span>
+          <img src="img/fav.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>   
     <div class="inner-page">
       <div class="bread">
         <div class="contain">
@@ -46,7 +73,7 @@
                 <div class="events__name">Оптово-вещевой рынок</div>
                 <div class="events__place"></div>
                 <div class="events__time">Ежедневно с 6:00 до 18:00</div>
-                <div class="events__geo">Москва, 14-ый км МКАД (внутренняя сторона), ул. Верхние поля <a href="">на карте</a></div>
+                <div class="events__geo">Москва, 14-ый км МКАД (внутренняя сторона), ул. Верхние поля<a href="" class="events__link">на карте</a></div>
                 <div class="events__cats">
                   <a href="" class="events__cat">Оптово-розничные рынки</a>
                   <a href="" class="events__cat">Оптово-вещевые рынки</a>
@@ -130,7 +157,9 @@
               </div>
               <div class="events__conts" id="conts">
                 <div class="h3">Контакты</div>
-                @@include('var/_map.html')
+                <div class="map__map">
+  <script async type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30c961fd048233a1c496cbd1246ffb4ae1f6e58076265424f07043f9a3fad95d&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+</div>
                 <table>
                   <tr>
                     <td>Адрес:</td>
@@ -164,42 +193,72 @@
               <div class="events__similar">
                 <div class="h3">Похожие площадки</div>
                 <div class="events__similar-list">
-                 @@include('var/_wholesale__item.html',{
-                  "img":"img/event-1.png",
-                  "name":"Садовод",
-                  "spec":"Оптово-розничный рынок",
-                  "text":"Крупнейший в России центр оптово-розничной торговли, предлагающий непродовольственные товары.",
-                  "adress":"Москва",
-                  "gal1":"<a href='img/gal-3.jpg' class='wholesale__gal-item'><img src='img/gal-3.jpg' /></a>",
-                  "gal2":"<a href='img/gal-4.jpg' class='wholesale__gal-item'><img src='img/gal-4.jpg' /></a>",
-                  "gal3":"<a href='img/gal-5.jpg' class='wholesale__gal-item'><img src='img/gal-5.jpg' /></a>",                  
-                  "gal4":"",
-                  "dates":""
-                })
-                @@include('var/_wholesale__item.html',{
-                  "img":"img/event-3.jpg",
-                  "name":"Уфабакалея",
-                  "spec":"Продукты питания по оптовым ценам",
-                  "text":"Продажа от мешка и упаковки. Сахар,мука,чай,крупы,масло,макароны Доставка в магазины,пекарни,общепит.",
-                  "adress":"Уфа, Республика Башкортостан",
-                  "gal1":"<a href='img/gal-6.jpg' class='wholesale__gal-item'><img src='img/gal-6.jpg' /></a>",
-                  "gal2":"<a href='img/gal-7.jpg' class='wholesale__gal-item'><img src='img/gal-7.jpg' /></a>",                  
-                  "gal3":"",
-                  "gal4":"",
-                  "dates":""
-                })
-                @@include('var/_wholesale__item.html',{
-                  "img":"img/noimage.svg",
-                  "name":"Заволжская база Маяк",
-                  "spec":"Продажа продуктов питания оптом и в розницу",
-                  "text":"Крупнейший оптово-розничный продовольственный центр Ульяновска. У нас закупают продукты питания рестораны, гостиницы, сетевые и несетевые магазины, региональные оптовые компании и ...",
-                  "adress":"Ульяновск, Ульяновская область",
-                  "gal1":"<a href='img/gal-8.jpg' class='wholesale__gal-item'><img src='img/gal-8.jpg' /></a>",
-                  "gal2":"<a href='img/gal-9.jpg' class='wholesale__gal-item'><img src='img/gal-9.jpg' /></a>",
-                  "gal3":"<a href='img/gal-10.jpg' class='wholesale__gal-item'><img src='img/gal-10.jpg' /></a>",
-                  "gal4":"<a href='img/gal-11.jpg' class='wholesale__gal-item'><img src='img/gal-11.jpg' /></a>",                  
-                  "dates":""
-                })
+                 <div class="wholesale__item">
+  <a href="" class="events__img-w"><img src="img/event-1.png" /></a>
+  <div class="wholesale__content">
+    <div class="wholesale__top">
+      <div class="events__dates"></div>      
+      <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
+    </div>
+    <div class="wholesale__info">
+      <a href="" class="wholesale__name">Садовод</a>
+      <div class="wholesale__spec">Оптово-розничный рынок</div>
+      <div class="wholesale__text">Крупнейший в России центр оптово-розничной торговли, предлагающий непродовольственные товары.</div>
+      <div class="wholesale__adress">Москва</div>
+    </div>
+    <div class="wholesale__gal">
+      <a href='img/gal-3.jpg' class='wholesale__gal-item'><img src='img/gal-3.jpg' /></a>      
+      <a href='img/gal-4.jpg' class='wholesale__gal-item'><img src='img/gal-4.jpg' /></a>      
+      <a href='img/gal-5.jpg' class='wholesale__gal-item'><img src='img/gal-5.jpg' /></a>      
+           
+    </div>
+  </div>
+</div>
+
+                <div class="wholesale__item">
+  <a href="" class="events__img-w"><img src="img/event-3.jpg" /></a>
+  <div class="wholesale__content">
+    <div class="wholesale__top">
+      <div class="events__dates"></div>      
+      <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
+    </div>
+    <div class="wholesale__info">
+      <a href="" class="wholesale__name">Уфабакалея</a>
+      <div class="wholesale__spec">Продукты питания по оптовым ценам</div>
+      <div class="wholesale__text">Продажа от мешка и упаковки. Сахар,мука,чай,крупы,масло,макароны Доставка в магазины,пекарни,общепит.</div>
+      <div class="wholesale__adress">Уфа, Республика Башкортостан</div>
+    </div>
+    <div class="wholesale__gal">
+      <a href='img/gal-6.jpg' class='wholesale__gal-item'><img src='img/gal-6.jpg' /></a>      
+      <a href='img/gal-7.jpg' class='wholesale__gal-item'><img src='img/gal-7.jpg' /></a>      
+            
+           
+    </div>
+  </div>
+</div>
+
+                <div class="wholesale__item">
+  <a href="" class="events__img-w"><img src="img/noimage.svg" /></a>
+  <div class="wholesale__content">
+    <div class="wholesale__top">
+      <div class="events__dates"></div>      
+      <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
+    </div>
+    <div class="wholesale__info">
+      <a href="" class="wholesale__name">Заволжская база Маяк</a>
+      <div class="wholesale__spec">Продажа продуктов питания оптом и в розницу</div>
+      <div class="wholesale__text">Крупнейший оптово-розничный продовольственный центр Ульяновска. У нас закупают продукты питания рестораны, гостиницы, сетевые и несетевые магазины, региональные оптовые компании и ...</div>
+      <div class="wholesale__adress">Ульяновск, Ульяновская область</div>
+    </div>
+    <div class="wholesale__gal">
+      <a href='img/gal-8.jpg' class='wholesale__gal-item'><img src='img/gal-8.jpg' /></a>      
+      <a href='img/gal-9.jpg' class='wholesale__gal-item'><img src='img/gal-9.jpg' /></a>      
+      <a href='img/gal-10.jpg' class='wholesale__gal-item'><img src='img/gal-10.jpg' /></a>      
+      <a href='img/gal-11.jpg' class='wholesale__gal-item'><img src='img/gal-11.jpg' /></a>     
+    </div>
+  </div>
+</div>
+
               </div>
             </div>
           </div>
@@ -213,10 +272,48 @@
 
 
   </div>
-  @@include('var/_footer.html')    
+  <footer class="footer">
+  <div class="contain">
+    <div class="footer__top">
+      <div class="footer__col">
+        <a href="index.html" class="footer__top-logo">ОПТОВКА.РФ</a>
+        <div class="footer__top-desc">
+          Портал для оптовых <br>покупателей и поставщиков
+        </div>
+      </div>
+      <ul class="footer__ul">
+        <li><a href="">По регионам</a></li>
+        <li><a href="">По типу продукции</a></li>
+        <li><a href="">По типу площадки</a></li>
+        <li><a href="">По охвату</a></li>
+        <li><a href="">Все площадки</a></li>
+        <li><a href="">Добавить площадку</a></li>
+        <li><a href="">Публикации</a></li>
+        <li><a href="">О сайте</a></li>
+        <li><a href="">Правила сайта</a></li>
+      </ul>
+    </div>
+    <div class="footer__bot">
+      <a href="" class="copy">© Оптовка.рф 2023</a>
+      <div class="copy-2">
+        Пользуясь данным сайтом, вы соглашаетесь с <a href="">пользовательским соглашением</a> и <a href="">политикой
+        конфиденциальности</a>
+      </div>
+    </div>
+  </div>
+</footer>    
 </div>
 <!--wrapper-->
 
-@@include('var/_scripts.html')
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css"
+  type="text/css" />
+<script src="js/slick.js"></script>  
+  <script src="js/nouislider.js"></script>
+  <script src="js/wNumb.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>
