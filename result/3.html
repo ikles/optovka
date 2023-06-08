@@ -56,7 +56,7 @@
           </ul>
         </div>
       </div>
-      <div class="rules pb-0">
+      <div class="main pb-0">
         <div class="contain">
           <h1>Оптовые площадки России</h1>
 
@@ -107,7 +107,7 @@
 
           </div>
 
-          <div class="row">
+          <div class="row wholesale__row">
             <div class="col-left">
               <div class="wholesale__list">
                  <div class="wholesale__item">
@@ -187,7 +187,37 @@
               </div>
             </div>
             <div class="col-right">
-              2
+              <div class="type">
+  <div class="type__title">Категории товаров</div>
+  <ul class="type__ul">
+    <li><a href="" class="active">Все</a></li>
+    <li><a href="">Сельское хозяйство</a></li>
+    <li><a href="">Одежда и текстиль</a></li>
+    <li><a href="">Оборудование и техника</a></li>
+    <li><a href="">Электроника и электротехника</a></li>
+    <li><a href="">Спорт и отдых</a></li>
+    <li><a href="">Строительство и ремонт</a></li>
+    <li><a href="">Косметика и парфюмерия</a></li>
+    <li><a href="">Продукты питания</a></li>
+    <li><a href="">Мебель и товары для дома</a></li>                  
+    <li class="_hidden"><a href="">Спорт и отдых</a></li>
+    <li class="_hidden"><a href="">Строительство и ремонт</a></li>
+  </ul>                
+  <a href="#" class="type__more toggle" data-swap="Скрыть" data-text="Ещё">Ещё</a>
+</div>
+
+<div class="type">
+  <div class="type__title">Тип площадки</div>
+  <ul class="type__ul">
+    <li><a href="" class="active">Все</a></li>
+    <li><a href="">Оптово-розничные рынки</a></li>
+    <li><a href="">Оптовые продовольственные рынки</a></li>
+    <li><a href="">Оптовые вещевые рынки</a></li>
+    <li><a href="">Оптовые базы (склады)</a></li>
+    <li><a href="">Оптовые ярмарки</a></li>
+    <li><a href="">Торгово-промышленные выставки</a></li>
+  </ul>
+</div>
             </div>
           </div>            
         </div><!--contain-->
@@ -222,15 +252,15 @@
         </div>
       </div>
       <ul class="footer__ul">
-        <li><a href="">По регионам</a></li>
-        <li><a href="">По типу продукции</a></li>
-        <li><a href="">По типу площадки</a></li>
-        <li><a href="">По охвату</a></li>
-        <li><a href="">Все площадки</a></li>
-        <li><a href="">Добавить площадку</a></li>
-        <li><a href="">Публикации</a></li>
-        <li><a href="">О сайте</a></li>
-        <li><a href="">Правила сайта</a></li>
+        <li>a href="">По регионам</a></li>
+        <li>a href="">По типу продукции</a></li>
+        <li>a href="">По типу площадки</a></li>
+        <li>a href="">По охвату</a></li>
+        <li>a href="">Все площадки</a></li>
+        <li>a href="">Добавить площадку</a></li>
+        <li>a href="">Публикации</a></li>
+        <li>a href="">О сайте</a></li>
+        <li>a href="">Правила сайта</a></li>
       </ul>
     </div>
     <div class="footer__bot">
@@ -241,7 +271,48 @@
       </div>
     </div>
   </div>
-</footer>    
+</footer>
+
+
+<div class="modal-overlay modal-overlay_1">
+  <div class="modal-form__block">
+    <div class="modal-form__inner">
+      <span class="modal-close modal-close_1"></span>
+      <div class="h3">Выбрать город</div>
+      <form class="cityform">
+        <input id="where_search" class="cityform__input" type="text" autocomplete="off" placeholder="Введите название" data-list=".filter-where-list">
+      </form>
+      <ul class="cityform__list">
+        <li><a href="">Москва</a></li>
+        <li><a href="">Санкт-Петербург</a></li>
+        <li><a href="">Казань</a></li>
+        <li><a href="">Екатеринбург</a></li>
+        <li><a href="">Уфа</a></li>
+        <li><a href="">Новосибирск</a></li>
+        <li><a href="">Тюмень</a></li>
+        <li><a href="">Челябинск</a></li>
+        <li><a href="">Краснодар</a></li>
+        <li><a href="">Нижний Новгород</a></li>
+      </ul>
+      <ul class="filter-where-list">
+        <li><a href="">Алтайский край</a></li>
+        <li><a href="">Амурская область</a></li>
+        <li><a href="">Архангельская область</a></li>
+        <li><a href="">Астраханская область</a></li>        
+        <li><a href="">Москва</a></li>
+        <li><a href="">Санкт-Петербург</a></li>
+        <li><a href="">Казань</a></li>
+        <li><a href="">Екатеринбург</a></li>
+        <li><a href="">Уфа</a></li>
+        <li><a href="">Новосибирск</a></li>
+        <li><a href="">Тюмень</a></li>
+        <li><a href="">Челябинск</a></li>
+        <li><a href="">Краснодар</a></li>
+        <li><a href="">Нижний Новгород</a></li>
+      </ul>
+    </div>
+  </div>
+</div>    
 </div>
 <!--wrapper-->
 
@@ -254,6 +325,7 @@
   <script src="js/wNumb.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.hideseek.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>

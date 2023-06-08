@@ -89,14 +89,14 @@
             <div class="col-left">
               <div class="market-tabs">
                 <ul>
-                  <li><a href="#about" class="active">О мероприятии</a></li>
+                  <li><a href="#about" class="active">О площадке</a></li>
                   <li><a href="#photo">Фото</a></li>
                   <li><a href="#conts">Контакты</a></li>
                   <li><a href="#reviews">Отзывы</a></li>
                 </ul>
               </div>
               <div class="events__about" id="about">
-                <div class="h3">О мероприятии</div>
+                <div class="h3">О площадке</div>
                 <p>Уже 25 лет торговый комплекс «Садовод» является крупнейшим в России центром оптово-розничной торговли. Общая площадь территории торгового комплекса составляет более 40 га.</p>
                 <p>Основные товары, представленные в торговом комплексе: мужская и женская одежда и обувь, пальто и куртки, меха и кожа, свадебные платья, мужские костюмы, украшения и аксессуары, товары для детей, игрушки, ковры и текстиль, ткани и фурнитура, товары для охоты, рыбалки и туризма, домашние животные, а также живые цветы, комнатные растения, семена и саженцы. В ТК «Садовод» всегда широчайший ассортимент, оптимальное соотношение доступных цен и высокого качества, гарантированного производителями.</p>
                 <p>В ТК «Садовод» свою продукцию предлагают непосредственные представители фабрик и производств России, Белоруссии, Турции, Польши, Киргизии, Китая. Здесь работают свыше 9 000 торговых павильонов. Ежедневно ТК «Садовод» посещают более 100 000 покупателей из различных регионов России и других государств.</p>
@@ -111,7 +111,7 @@
                   <a href="" class="events__cat">Товары для детей</a>
                   <a href="" class="events__cat">Сельское хозяйство</a>
                 </div>
-              </div>            
+              </div>           
               <div class="events__photos-w" id="photo">
                 <div class="h3">Фото</div>
                 <div class="events__photos">
@@ -124,7 +124,7 @@
               </div>
               <div class="events__works">
                 <div class="h3">График работы</div>
-                <table>
+                <table class="content-table">
                   <tr>
                     <td>Пн:</td>
                     <td>6:00 – 18:00</td>
@@ -160,7 +160,7 @@
                 <div class="map__map">
   <script async type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30c961fd048233a1c496cbd1246ffb4ae1f6e58076265424f07043f9a3fad95d&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
 </div>
-                <table>
+                <table class="content-table">
                   <tr>
                     <td>Адрес:</td>
                     <td>14-ый км МКАД (внутренняя сторона),
@@ -186,9 +186,70 @@
               </div>
               <div class="events__revs" id="reviews">
                 <div class="h3">Отзывы (2)</div>
+
+                <div class="reviews__item">
+                  <div class="reviews__top">
+                    <div class="reviews__avatar"><img src="img/ava.svg" /></div>
+                    <div class="reviews__name">Мария</div>
+                    <div class="reviews__date">19.11.22</div>
+                  </div>
+                  <p class="reviews__text">Идеальный рынок для опта. Если потерпеть постоянный кипешь, который присущ садоводу, можно очень продуктивно съездить и закупиться.</p>
+                  <div class="reviews__actions">
+                    <a href="" class="reviews__like reviews__action">
+                      <span>0</span>
+                      <span class="comment__icon"><img src="img/like-1.svg" /></span>
+                    </a>
+                    <a href="" class="reviews__dislike reviews__action">
+                      <span>2</span>
+                      <span class="comment__icon"><img src="img/like-2.svg" /></span>
+                    </a>
+                    <a href="" class="reviews__answer">ответить</a>
+                  </div>
+                </div>
+
+                <div class="reviews__item">
+                  <div class="reviews__top">
+                    <div class="reviews__avatar"><img src="img/ava.svg" /></div>
+                    <div class="reviews__name">Мария</div>
+                    <div class="reviews__date">19.11.22</div>
+                  </div>
+                  <p class="reviews__text">Здравствуйте! Продаются ли на этом рынке детские кроватки и коляски?</p>
+                  <div class="reviews__actions">
+                    <a href="" class="reviews__like reviews__action">
+                      <span>0</span>
+                      <span class="comment__icon"><img src="img/like-1.svg" /></span>
+                    </a>
+                    <a href="" class="reviews__dislike reviews__action">
+                      <span>2</span>
+                      <span class="comment__icon"><img src="img/like-2.svg" /></span>
+                    </a>
+                    <a href="" class="reviews__answer">ответить</a>
+                  </div>
+                </div>
               </div>
-              <div class="events__add-rev">
+              <div class="events__add-rev">                                                
                 <div class="h3">Оставить отзыв</div>
+                <form class="add-quest__form">
+                  <div class="add-quest__row">
+                    <label class="add-quest__col">
+                      <div class="add-quest__label">Имя</div>
+                      <input class="add-quest__input" type="text" placeholder="" />
+                    </label>
+                    <label class="add-quest__col">
+                      <div class="add-quest__label">Email</div>
+                      <input class="add-quest__input" type="text" placeholder="" />
+                    </label>
+                  </div>
+                  <label class="add-quest__area-w">
+                    <div class="add-quest__label">Отзыв</div>                      
+                    <textarea class="add-quest__area" placeholder=""></textarea>
+                  </label>
+                  <div class="add-quest__rules">Нажимая кнопку "Отправить", Вы соглашаетесь с <a href="">правилами сайта</a></div>
+                  <div class="add-quest__robot">
+                    <img src="img/robot.jpg" />
+                  </div>
+                  <button class="add-quest__btn">Отправить</button>
+                </form>                
               </div>
               <div class="events__similar">
                 <div class="h3">Похожие площадки</div>
@@ -282,15 +343,15 @@
         </div>
       </div>
       <ul class="footer__ul">
-        <li><a href="">По регионам</a></li>
-        <li><a href="">По типу продукции</a></li>
-        <li><a href="">По типу площадки</a></li>
-        <li><a href="">По охвату</a></li>
-        <li><a href="">Все площадки</a></li>
-        <li><a href="">Добавить площадку</a></li>
-        <li><a href="">Публикации</a></li>
-        <li><a href="">О сайте</a></li>
-        <li><a href="">Правила сайта</a></li>
+        <li>a href="">По регионам</a></li>
+        <li>a href="">По типу продукции</a></li>
+        <li>a href="">По типу площадки</a></li>
+        <li>a href="">По охвату</a></li>
+        <li>a href="">Все площадки</a></li>
+        <li>a href="">Добавить площадку</a></li>
+        <li>a href="">Публикации</a></li>
+        <li>a href="">О сайте</a></li>
+        <li>a href="">Правила сайта</a></li>
       </ul>
     </div>
     <div class="footer__bot">
@@ -301,7 +362,48 @@
       </div>
     </div>
   </div>
-</footer>    
+</footer>
+
+
+<div class="modal-overlay modal-overlay_1">
+  <div class="modal-form__block">
+    <div class="modal-form__inner">
+      <span class="modal-close modal-close_1"></span>
+      <div class="h3">Выбрать город</div>
+      <form class="cityform">
+        <input id="where_search" class="cityform__input" type="text" autocomplete="off" placeholder="Введите название" data-list=".filter-where-list">
+      </form>
+      <ul class="cityform__list">
+        <li><a href="">Москва</a></li>
+        <li><a href="">Санкт-Петербург</a></li>
+        <li><a href="">Казань</a></li>
+        <li><a href="">Екатеринбург</a></li>
+        <li><a href="">Уфа</a></li>
+        <li><a href="">Новосибирск</a></li>
+        <li><a href="">Тюмень</a></li>
+        <li><a href="">Челябинск</a></li>
+        <li><a href="">Краснодар</a></li>
+        <li><a href="">Нижний Новгород</a></li>
+      </ul>
+      <ul class="filter-where-list">
+        <li><a href="">Алтайский край</a></li>
+        <li><a href="">Амурская область</a></li>
+        <li><a href="">Архангельская область</a></li>
+        <li><a href="">Астраханская область</a></li>        
+        <li><a href="">Москва</a></li>
+        <li><a href="">Санкт-Петербург</a></li>
+        <li><a href="">Казань</a></li>
+        <li><a href="">Екатеринбург</a></li>
+        <li><a href="">Уфа</a></li>
+        <li><a href="">Новосибирск</a></li>
+        <li><a href="">Тюмень</a></li>
+        <li><a href="">Челябинск</a></li>
+        <li><a href="">Краснодар</a></li>
+        <li><a href="">Нижний Новгород</a></li>
+      </ul>
+    </div>
+  </div>
+</div>    
 </div>
 <!--wrapper-->
 
@@ -314,6 +416,7 @@
   <script src="js/wNumb.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.hideseek.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>
