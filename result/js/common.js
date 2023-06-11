@@ -38,7 +38,7 @@ jQuery(document).ready(function( $ ) {
 
 /************************************/
 
-/*$('.wrapper').prepend('<span class="eye-3"></span>');
+$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -50,7 +50,7 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});*/
+});
 
 /************************************/
 
@@ -185,7 +185,14 @@ $('.eye-3').click(function (e) {
     $(this).next().slideToggle().toggleClass('open-content');
   });
 
+
+
+
+  
+
 }); //ready
 
 
-//const dropzone = new Dropzone("div.my-dropzone", { url: "/file/post" });
+
+
+

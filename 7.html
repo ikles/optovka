@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">  
+  <meta charset="UTF-8">
   <!--meta name="viewport" content="width=1200px"-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>7. Добавить площадку</title>  
+  <title>7. Добавить площадку</title>
   @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
+
 <body>
 
   <div class="wrapper">
-    @@include('var/_header.html')   
+    @@include('var/_header.html')
     <div class="inner-page">
       <div class="bread">
         <div class="contain">
           <ul>
-            <li><a href="">Главная</a></li>            
-            <li><span>Добавить площадку</span></li>            
+            <li><a href="">Главная</a></li>
+            <li><span>Добавить площадку</span></li>
           </ul>
         </div>
       </div>
@@ -92,9 +94,9 @@
                         <label>
                           <span>Дата начала<sup>*</sup></span>
                           <input type="text">
-                        </label>                        
+                        </label>
                       </div>
-                      <div class="add__item-col">                      
+                      <div class="add__item-col">
                         <label>
                           <span>Дата завершения<sup>*</sup></span>
                           <input type="text">
@@ -116,8 +118,41 @@
                   </div>
 
                   <div class="add__item">
+                    <div class="add-file__item">
+                      <div class="add-file__l">
+                        <div class="add-file__title">Логотип</div>
+                        <label class="add-file__wrap">                          
+                          <input type="file" id="file" accept="image/png, image/jpg, image/jpeg"> 
+                          <div class="add-file__dropzone">
+                            <img src="img/addfile.png">
+                          </div>
+                          <div class="add-file__download">Загрузить</div>
+                        </label>
+                      </div>
+                      <div class="add-file__r">
+                        <div class="add-file__info">Нажмите на кнопку или перетащите фото в эту область</div>
+                        <div class="add-file__format">1 изображение в формате PNG, JPEG</div>
+                      </div>
+                    </div>
+                  </div>
 
-
+                  <div class="add__item">
+                    <div class="add-file__item">
+                      <div class="add-file__l">
+                        <div class="add-file__title">Фотографии</div>
+                        <label class="add-file__wrap">                          
+                          <input type="file" id="file" multiple="multiple" accept="image/png, image/jpg, image/jpeg"> 
+                          <div class="add-file__dropzone">
+                            <img src="img/addfile.png">
+                          </div>
+                          <div class="add-file__download">Загрузить</div>
+                        </label>
+                      </div>
+                      <div class="add-file__r">
+                        <div class="add-file__info">Нажмите на кнопку или перетащите фото в эту область</div>
+                        <div class="add-file__format">до 5 изображений в формате PNG, JPEG</div>
+                      </div>
+                    </div>
                   </div>
 
                 </div>
@@ -142,7 +177,7 @@
                           <input type="text">
                         </label>
                       </div>
-                    </div>                    
+                    </div>
                   </div>
                   <div class="add__item">
                     <div class="add__item-row">
@@ -158,7 +193,7 @@
                           <input type="text">
                         </label>
                       </div>
-                    </div>                    
+                    </div>
                   </div>
                   <div class="add__item">
                     <div class="add__item-row">
@@ -174,7 +209,7 @@
                           <input type="text">
                         </label>
                       </div>
-                    </div>                    
+                    </div>
                   </div>
                 </div>
 
@@ -195,7 +230,7 @@
                           <input type="text">
                         </label>
                       </div>
-                    </div>                    
+                    </div>
                   </div>
                 </div>
                 <p class="add__rules">Нажимая кнопку "Отправить", Вы соглашаетесь с <a href="">правилами сайта</a></p>
@@ -208,15 +243,17 @@
             <div class="col-right">
 
             </div>
-          </div>            
+          </div>
 
-        </div><!--contain-->
-      </div>        
-    </div>  
-    @@include('var/_footer.html')    
+        </div>
+        <!--contain-->
+      </div>
+    </div>
+    @@include('var/_footer.html')
   </div>
   <!--wrapper-->
 
   @@include('var/_scripts.html')
 </body>
+
 </html>
