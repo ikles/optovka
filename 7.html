@@ -37,12 +37,12 @@
             <div class="col-left">
               <h1>Добавить площадку</h1>
               <p>Для добавления площадки заполните форму. Размещение площадок в каталоге бесплатное. <br>
-              После проверки модератором, площадка будет опубликована на сайте.</p>
-              <div class="add__about">
-                О площадке
-              </div>
-
+              После проверки модератором, площадка будет опубликована на сайте.</p>              
               <form class="add__form">
+                <div class="add__about">
+                  О площадке
+                </div>
+
                 <div class="add__section">
                   <div class="add__item">
                     <label>
@@ -117,44 +117,45 @@
                     </label>
                   </div>
 
-                  <div class="add__item">
-                    <div class="add-file__item">
-                      <div class="add-file__l">
-                        <div class="add-file__title">Логотип</div>
-                        <label class="add-file__wrap">                          
-                          <input type="file" id="file" accept="image/png, image/jpg, image/jpeg"> 
-                          <div class="add-file__dropzone">
-                            <img src="img/addfile.png">
-                          </div>
-                          <div class="add-file__download">Загрузить</div>
-                        </label>
+                  <div class="add-file__items">
+                    <div class="add__item">
+                      <div class="add-file__item">
+                        <div class="add-file__l">
+                          <div class="add-file__title">Логотип</div>
+                          <label class="add-file__wrap">                          
+                            <input type="file" id="file" accept="image/png, image/jpg, image/jpeg"> 
+                            <div class="add-file__dropzone">
+                              <img src="img/addfile.png">
+                            </div>
+                            <div class="add-file__download">Загрузить</div>
+                          </label>
+                        </div>
+                        <div class="add-file__r">
+                          <div class="add-file__info">Нажмите на кнопку или перетащите фото в эту область</div>
+                          <div class="add-file__format">1 изображение в формате PNG, JPEG</div>
+                        </div>
                       </div>
-                      <div class="add-file__r">
-                        <div class="add-file__info">Нажмите на кнопку или перетащите фото в эту область</div>
-                        <div class="add-file__format">1 изображение в формате PNG, JPEG</div>
+                    </div>
+
+                    <div class="add__item">
+                      <div class="add-file__item">
+                        <div class="add-file__l">
+                          <div class="add-file__title">Фотографии</div>
+                          <label class="add-file__wrap">                          
+                            <input type="file" id="file" multiple="multiple" accept="image/png, image/jpg, image/jpeg"> 
+                            <div class="add-file__dropzone">
+                              <img src="img/addfile.png">
+                            </div>
+                            <div class="add-file__download">Загрузить</div>
+                          </label>
+                        </div>
+                        <div class="add-file__r">
+                          <div class="add-file__info">Нажмите на кнопку или перетащите фото в эту область</div>
+                          <div class="add-file__format">до 5 изображений в формате PNG, JPEG</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-
-                  <div class="add__item">
-                    <div class="add-file__item">
-                      <div class="add-file__l">
-                        <div class="add-file__title">Фотографии</div>
-                        <label class="add-file__wrap">                          
-                          <input type="file" id="file" multiple="multiple" accept="image/png, image/jpg, image/jpeg"> 
-                          <div class="add-file__dropzone">
-                            <img src="img/addfile.png">
-                          </div>
-                          <div class="add-file__download">Загрузить</div>
-                        </label>
-                      </div>
-                      <div class="add-file__r">
-                        <div class="add-file__info">Нажмите на кнопку или перетащите фото в эту область</div>
-                        <div class="add-file__format">до 5 изображений в формате PNG, JPEG</div>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
                 <div class="add__about">Контактные данные</div>
                 <p class="add__text">Данные будут опубликованы в карточке площадки</p>
