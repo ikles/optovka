@@ -801,16 +801,11 @@ a {
   }
 }
 
-.rules {
-  margin-top: 22px;
-  padding-bottom: 100px;
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #232323;
+.rules {  
+  p {  
     margin-bottom: 0;
     &:not(:last-child) {
-      margin-bottom: 16px;
+      margin-bottom: 15px;
     }
   }
 }
@@ -834,11 +829,11 @@ a {
 }
 
 .accordion-container {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .accordion-item {
-  padding: 20px 0;
+  padding: 16px 0;
   border-bottom: 1px solid #DDDDDD;
   &:first-child {
     border-top: 1px solid #DDDDDD;
@@ -2029,6 +2024,9 @@ h2 {
 
 .add-quest {
   padding-top: 30px;
+  .h3 {
+    margin-bottom: 28px;
+  }
 }
 
 .add-quest__form {
