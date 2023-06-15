@@ -2384,26 +2384,25 @@ p.reviews__text {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .publication-actions__share a {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 8px;
+    height: 42px;
+    width: 42px; }
 
 .publication-actions__text {
   font-size: 16px;
   color: #777777; }
-
-.publication-actions__soc {
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 8px;
-  height: 42px;
-  width: 42px; }
 
 .add-file__item {
   display: -webkit-flex;
@@ -2497,7 +2496,11 @@ p.reviews__text {
     width: 50%; }
   .sitemap__cities ul li:nth-child(3) a {
     border: none;
-    padding-top: 0; } }
+    padding-top: 0; }
+  .events__photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5 / 4; } }
 
 @media (max-width: 991px) {
   .latest-pubs .pubs__col {
@@ -2593,7 +2596,28 @@ p.reviews__text {
     margin: 40px 0; }
   .bread ul li {
     line-height: 1.5;
-    margin-bottom: 7px; } }
+    margin-bottom: 7px; }
+  .events__item {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .events__img-w {
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0; }
+  .events__dopinfo {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: auto;
+    margin-left: auto; }
+  .events__content {
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px; } }
 
 @media (max-width: 767px) {
   .publication__row .pubs__col {
@@ -2609,6 +2633,8 @@ p.reviews__text {
   .inner-page h1 {
     font-size: 28px;
     margin-bottom: 14px; }
+  .events__title {
+    font-size: 28px; }
   h2,
   .h3 {
     font-size: 24px;
@@ -2638,7 +2664,11 @@ p.reviews__text {
     padding: 25px;
     padding-bottom: 35px; }
   .add-file__items {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .wholesale__gal {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
 
 @media (max-width: 640px) {
   .publication-actions__footer {
@@ -2705,13 +2735,34 @@ p.reviews__text {
   .add__item-col {
     width: 100%; }
     .add__item-col:not(:last-child) {
-      margin-bottom: 18px; } }
+      margin-bottom: 18px; }
+  .events__dopinfo {
+    -webkit-order: -5;
+        -ms-flex-order: -5;
+            order: -5;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left; }
+  .events__photos .slick-slide {
+    padding: 0 5px; }
+  .wholesale__item {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .wholesale__item .events__img-w {
+      margin-bottom: 10px; }
+    .wholesale__item .wholesale__content {
+      width: 100%;
+      margin-left: 0; } }
 
 @media (max-width: 480px) {
   .pubs__date,
   .pubs__cat,
   .pubs__title {
     font-size: 14px; }
+  .events__title,
   .inner-page h1 {
     font-size: 24px; }
   h2,
@@ -2760,7 +2811,30 @@ p.reviews__text {
     margin-right: 0;
     margin-bottom: 10px; }
   .add__section:not(:last-child) {
-    margin-bottom: 42px; } }
+    margin-bottom: 42px; }
+  .events__top {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .events__title {
+    width: 100%; }
+  .events__icons {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 15px; }
+  .events__works,
+  .events__add-rev,
+  .events__conts,
+  .events__cats-w,
+  .events__photos-w {
+    padding: 15px 0; }
+  .events__similar {
+    padding-top: 15px; }
+  table.content-table td {
+    vertical-align: top;
+    font-size: 14px; }
+  .wholesale__item {
+    padding-top: 22px; } }
 
 @media (max-width: 375px) {
   .latest-pubs .pubs__col {
