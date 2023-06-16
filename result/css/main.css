@@ -914,7 +914,7 @@ h2 {
   .pubs__title:hover {
     text-decoration: none; }
 
-.pubs__date {
+.pubs__item div {
   font-size: 16px;
   line-height: 1.3;
   color: #777777; }
@@ -2500,7 +2500,11 @@ p.reviews__text {
   .events__photo {
     width: 100%;
     height: auto;
-    aspect-ratio: 5 / 4; } }
+    aspect-ratio: 5 / 4; }
+  .main-navigation__row ul li {
+    width: 50%; }
+  .category__ul li {
+    line-height: 1.5; } }
 
 @media (max-width: 991px) {
   .latest-pubs .pubs__col {
@@ -2617,7 +2621,33 @@ p.reviews__text {
             order: 3;
     width: 100%;
     margin-left: 0;
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .filter form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .filter form .select2-container:not(:last-child) {
+    margin-bottom: 15px; }
+  .filter {
+    padding-bottom: 5px; }
+  .filter__reset {
+    padding-bottom: 20px; }
+  .regions__links ul li {
+    width: 50%; }
+  .character__list li {
+    line-height: 1.5; }
+  .main-navigation__row ul li a {
+    display: block;
+    background-position: right 6px center; }
+  .verif .contain {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .verif__row {
+    margin-left: 0; } }
 
 @media (max-width: 767px) {
   .publication__row .pubs__col {
@@ -2668,7 +2698,21 @@ p.reviews__text {
   .wholesale__gal {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
+            flex-wrap: wrap; }
+  .wholesale__nav ul li {
+    width: 33.333%; }
+  .pagin--wholesale {
+    margin-bottom: 40px; }
+  ul.cityform__list li {
+    width: 33.333%; }
+  .category__row {
+    margin-top: 25px; }
+  .character__row {
+    margin-top: 35px; }
+  .hero__h1 {
+    font-size: 32px; }
+  .hero {
+    padding: 80px 0; } }
 
 @media (max-width: 640px) {
   .publication-actions__footer {
@@ -2677,7 +2721,39 @@ p.reviews__text {
             flex-wrap: wrap; }
   .publication-actions__comments {
     width: 100%;
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+  ul.cityform__list li {
+    width: 50%; }
+  .main-navigation__row ul li a {
+    font-size: 16px;
+    padding-right: 22px;
+    background-position: right 0 top 6px; }
+  .category__ul li {
+    width: 50%; }
+  .h3__wrap .all-link {
+    margin-left: 0; }
+  .h3__wrap .h3 {
+    width: 100%;
+    margin-bottom: 10px; }
+  .all-link {
+    font-size: 14px;
+    background-size: 15px;
+    padding-right: 23px; }
+  .character__list li a {
+    font-size: 14px; }
+  .verif__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .verif__row a {
+    margin-top: 15px; }
+  .verif__row div {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px; } }
 
 @media (max-width: 575px) {
   .footer__ul li {
@@ -2755,10 +2831,32 @@ p.reviews__text {
       margin-bottom: 10px; }
     .wholesale__item .wholesale__content {
       width: 100%;
-      margin-left: 0; } }
+      margin-left: 0; }
+  .wholesale__nav ul li {
+    width: 50%; }
+  .filter form .select2-container {
+    max-width: 100%; }
+  .filter {
+    padding-bottom: 20px; }
+  .character__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .character__col {
+    width: 100%; }
+  .sale-platforms {
+    padding-top: 15px; }
+  .category {
+    padding: 15px 0; }
+  .main-navigation__row ul li {
+    width: 100%; }
+  .character__col:last-child .character__item:last-child {
+    margin-bottom: 0; }
+  .category__ul li {
+    font-size: 14px; } }
 
 @media (max-width: 480px) {
-  .pubs__date,
+  .pubs__item div,
   .pubs__cat,
   .pubs__title {
     font-size: 14px; }
@@ -2782,15 +2880,6 @@ p.reviews__text {
     margin-right: 0; }
   .sitemap__coverage {
     margin-top: 30px; }
-  .h3__wrap .all-link {
-    margin-left: 0; }
-  .h3__wrap .h3 {
-    width: 100%;
-    margin-bottom: 10px; }
-  .all-link {
-    font-size: 14px;
-    background-size: 15px;
-    padding-right: 23px; }
   .pubs__row {
     margin-top: 0px; }
   .publication-actions__text,
@@ -2834,7 +2923,26 @@ p.reviews__text {
     vertical-align: top;
     font-size: 14px; }
   .wholesale__item {
-    padding-top: 22px; } }
+    padding-top: 22px; }
+  .regions__links ul li {
+    width: 100%; }
+  .regions__links {
+    padding: 25px 0; }
+  .type {
+    margin-bottom: 27px; }
+  .wholesale__nav ul li {
+    width: 100%;
+    padding-right: 0; }
+  ul.cityform__list li {
+    width: 100%; }
+    ul.cityform__list li:last-child {
+      margin-bottom: 0; }
+  .hero__h1 {
+    font-size: 25px; }
+  .hero {
+    padding: 50px 0; }
+  .category__ul li {
+    width: 100%; } }
 
 @media (max-width: 375px) {
   .latest-pubs .pubs__col {
@@ -2843,7 +2951,7 @@ p.reviews__text {
 @media (max-width: 360px) {
   .publication__row .pubs__col {
     width: 100%; }
-  .pubs__date,
+  .pubs__item div,
   .pubs__cat,
   .pubs__title {
     font-size: 16px; }
@@ -2856,7 +2964,9 @@ p.reviews__text {
       width: 100%; }
       .header-nav li + li {
         margin-left: 0;
-        margin-top: 15px; } }
+        margin-top: 15px; }
+  .filter {
+    padding: 20px 15px; } }
 
 .completed-slde-dots {
   position: absolute;
