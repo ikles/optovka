@@ -2746,6 +2746,7 @@ p.reviews__text {
       text-align: center;
       margin-top: 15px;
       transform: translateY(0);
+      z-index: 10;
     }
   }
   body.body-open {
