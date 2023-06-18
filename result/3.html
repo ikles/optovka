@@ -8,8 +8,7 @@
   <title>3. Показать мероприятия</title>  
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -26,21 +25,26 @@
   <div class="wrapper">
     <header class="header">
   <div class="contain">
+    <div class="show-pda pda__control">
+      <a href="index.html" class="logo">ОПТОВКА.РФ</a>
+      <span class="burger"></span>
+    </div>
+
     <div class="header__row">
       <div class="header__left">
-        <a href="index.html" class="logo">ОПТОВКА.РФ</a>
-        <span class="header__city">Выбрать город</span>
-      </div>
+        <a class="logo hide-pda" href="index.html" class="logo">ОПТОВКА.РФ</a>
+        <span>Выбрать город</span>
+      </div>      
       <div class="header__right">
-        <ul class="header-nav">
+        <ul>
           <li><a href="">Оптовые площадки</a></li>
           <li><a href="">Публикации</a></li>
         </ul>
         <a href="" class="header__btn">Добавить площадку</a>
-        <div class="header-fav">
+        <a href="" class="header-fav">
           <span>10</span>
           <img src="img/fav.svg" />
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -115,7 +119,10 @@
   <div class="wholesale__content">
     <div class="wholesale__top">
       <div class="events__dates">13 марта - 15 марта 2023</div>      
-      <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
+      <label class="wholesale__icon">
+        <input type="checkbox">
+        <span></span>                
+      </label>
     </div>
     <div class="wholesale__info">
       <a href="" class="wholesale__name">Продэкспо</a>
@@ -137,7 +144,10 @@
   <div class="wholesale__content">
     <div class="wholesale__top">
       <div class="events__dates">28 февраля - 15 марта 2023</div>      
-      <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
+      <label class="wholesale__icon">
+        <input type="checkbox">
+        <span></span>                
+      </label>
     </div>
     <div class="wholesale__info">
       <a href="" class="wholesale__name">Федеральная оптовая ярмарка</a>
@@ -159,7 +169,10 @@
   <div class="wholesale__content">
     <div class="wholesale__top">
       <div class="events__dates">1 мая – 3 мая 2023</div>      
-      <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
+      <label class="wholesale__icon">
+        <input type="checkbox">
+        <span></span>                
+      </label>
     </div>
     <div class="wholesale__info">
       <a href="" class="wholesale__name">Интерткань. Весна 2023</a>
@@ -249,7 +262,7 @@
   <div class="contain">
     <div class="footer__top">
       <div class="footer__col">
-        <a href="index.html" class="footer__top-logo">ОПТОВКА.РФ</a>
+        <a href="index.html" class="footer__logo">ОПТОВКА.РФ</a>
         <div class="footer__top-desc">
           Портал для оптовых <br>покупателей и поставщиков
         </div>
@@ -267,7 +280,7 @@
       </ul>
     </div>
     <div class="footer__bot">
-      <a href="" class="copy">© Оптовка.рф 2023</a>
+      <span class="copy">© Оптовка.рф 2023</span>
       <div class="copy-2">
         Пользуясь данным сайтом, вы соглашаетесь с <a href="">пользовательским соглашением</a> и <a href="">политикой
         конфиденциальности</a>
@@ -321,8 +334,6 @@
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.js"></script>  
-<script src="js/nouislider.js"></script>
-<script src="js/wNumb.min.js"></script>
 <script src="js/select2.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/jquery.hideseek.js"></script>

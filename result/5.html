@@ -8,8 +8,7 @@
   <title>5. Страница рынка</title>  
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -26,21 +25,26 @@
   <div class="wrapper">
     <header class="header">
   <div class="contain">
+    <div class="show-pda pda__control">
+      <a href="index.html" class="logo">ОПТОВКА.РФ</a>
+      <span class="burger"></span>
+    </div>
+
     <div class="header__row">
       <div class="header__left">
-        <a href="index.html" class="logo">ОПТОВКА.РФ</a>
-        <span class="header__city">Выбрать город</span>
-      </div>
+        <a class="logo hide-pda" href="index.html" class="logo">ОПТОВКА.РФ</a>
+        <span>Выбрать город</span>
+      </div>      
       <div class="header__right">
-        <ul class="header-nav">
+        <ul>
           <li><a href="">Оптовые площадки</a></li>
           <li><a href="">Публикации</a></li>
         </ul>
         <a href="" class="header__btn">Добавить площадку</a>
-        <div class="header-fav">
+        <a href="" class="header-fav">
           <span>10</span>
           <img src="img/fav.svg" />
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -75,8 +79,8 @@
                 <div class="events__time">Ежедневно с 6:00 до 18:00</div>
                 <div class="events__geo">Москва, 14-ый км МКАД (внутренняя сторона), ул. Верхние поля <a href="">на карте</a></div>
                 <div class="events__cats">
-                  <a href="" class="events__cat">Оптово-розничные рынки</a>
-                  <a href="" class="events__cat">Оптово-вещевые рынки</a>
+                  <a href="">Оптово-розничные рынки</a>
+                  <a href="">Оптово-вещевые рынки</a>
                 </div>
               </div>
             </div>
@@ -104,12 +108,12 @@
               <div class="events__cats-w">
                 <div class="h4">Категории товаров</div>
                 <div class="events__cats">
-                  <a href="" class="events__cat">Одежда и текстиль</a>
-                  <a href="" class="events__cat">Электроника и электротехника</a>
-                  <a href="" class="events__cat">Спорт и отдых</a>
-                  <a href="" class="events__cat">Косметика и парфюмерия</a>
-                  <a href="" class="events__cat">Товары для детей</a>
-                  <a href="" class="events__cat">Сельское хозяйство</a>
+                  <a href="">Одежда и текстиль</a>
+                  <a href="">Электроника и электротехника</a>
+                  <a href="">Спорт и отдых</a>
+                  <a href="">Косметика и парфюмерия</a>
+                  <a href="">Товары для детей</a>
+                  <a href="">Сельское хозяйство</a>
                 </div>
               </div>           
               <div class="events__photos-w" id="photo">
@@ -124,7 +128,7 @@
               </div>
               <div class="events__works">
                 <div class="h3">График работы</div>
-                <table class="content-table">
+                <table>
                   <tr>
                     <td>Пн:</td>
                     <td>6:00 – 18:00</td>
@@ -160,7 +164,7 @@
                 <div class="map__map">
   <script async type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30c961fd048233a1c496cbd1246ffb4ae1f6e58076265424f07043f9a3fad95d&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
 </div>
-                <table class="content-table">
+                <table>
                   <tr>
                     <td>Адрес:</td>
                     <td>14-ый км МКАД (внутренняя сторона),
@@ -259,7 +263,10 @@
   <div class="wholesale__content">
     <div class="wholesale__top">
       <div class="events__dates"></div>      
-      <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
+      <label class="wholesale__icon">
+        <input type="checkbox">
+        <span></span>                
+      </label>
     </div>
     <div class="wholesale__info">
       <a href="" class="wholesale__name">Садовод</a>
@@ -281,7 +288,10 @@
   <div class="wholesale__content">
     <div class="wholesale__top">
       <div class="events__dates"></div>      
-      <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
+      <label class="wholesale__icon">
+        <input type="checkbox">
+        <span></span>                
+      </label>
     </div>
     <div class="wholesale__info">
       <a href="" class="wholesale__name">Уфабакалея</a>
@@ -303,7 +313,10 @@
   <div class="wholesale__content">
     <div class="wholesale__top">
       <div class="events__dates"></div>      
-      <a href="" class="wholesale__icon"><img src="img/icon-cat-1.svg" /></a>      
+      <label class="wholesale__icon">
+        <input type="checkbox">
+        <span></span>                
+      </label>
     </div>
     <div class="wholesale__info">
       <a href="" class="wholesale__name">Заволжская база Маяк</a>
@@ -337,7 +350,7 @@
   <div class="contain">
     <div class="footer__top">
       <div class="footer__col">
-        <a href="index.html" class="footer__top-logo">ОПТОВКА.РФ</a>
+        <a href="index.html" class="footer__logo">ОПТОВКА.РФ</a>
         <div class="footer__top-desc">
           Портал для оптовых <br>покупателей и поставщиков
         </div>
@@ -355,7 +368,7 @@
       </ul>
     </div>
     <div class="footer__bot">
-      <a href="" class="copy">© Оптовка.рф 2023</a>
+      <span class="copy">© Оптовка.рф 2023</span>
       <div class="copy-2">
         Пользуясь данным сайтом, вы соглашаетесь с <a href="">пользовательским соглашением</a> и <a href="">политикой
         конфиденциальности</a>
@@ -409,8 +422,6 @@
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.js"></script>  
-<script src="js/nouislider.js"></script>
-<script src="js/wNumb.min.js"></script>
 <script src="js/select2.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/jquery.hideseek.js"></script>

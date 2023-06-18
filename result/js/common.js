@@ -1,16 +1,11 @@
 jQuery(document).ready(function( $ ) {
 
-  $(".toggle-mnu").click(function() {
-    $(this).toggleClass("on");
-    $(".top-mnu").slideToggle();
-    return false;
-  });
+  
 
-  $('body').click(function () {
-    if( $(".toggle-mnu").hasClass("on") ){
-      $(".toggle-mnu").removeClass("on");
-      $(".top-mnu").fadeOut();
-    }
+  $('.burger').click(function () {
+    $(this).toggleClass('burger-open');
+    $('body').toggleClass("body-open");
+    $('.header__row').toggleClass("open");    
   });
 
 
@@ -106,8 +101,8 @@ $('.eye-3').click(function (e) {
   }
 
   
-  popup('.hero__btn', '.modal-overlay_1', '.modal-close_1');
-  popup('.header__city', '.modal-overlay_1', '.modal-close_1');
+  popup('.hero button', '.modal-overlay_1', '.modal-close_1');
+  popup('.header__left span', '.modal-overlay_1', '.modal-close_1');
 
 
   $('#where_search').on('input', function() { 
